@@ -5,15 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissor</title>
-    <script src="script.js" ></script>
+    
+    <h1>Welcome to Rock Paper Scissor's Game</h1>
+    <h2>Select your choice below</h2>
+    <h2 id="h2" ></h2>
 </head>
 <body>
-    <button class="btn" onclick="myfunction()">Click me to start Rock-Paper-Scissor</button>
+    <button  id="btn1">Rock</button>
+    <button id="btn2">Paper</button>
+    <button id="btn3">Scissor</button>
     <style>
-        .btn{
-            background-color: brown;
-            margin: 100px 100px 100px 100px;
+        h2{
+            text-align: center;
+        }
+        body{
+            background-color: #f4f4f4;
+        }
+        h1{
+            text-align: center;
+            margin: 10px ;
+            padding: 20px ;
+        }
+        #btn1, #btn2 , #btn3{
+            color:white;
+            background-color:red;
+            margin: 100px 200px 100px 560px;
+            width: 100px;
+            height: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 5px;
+            border: 1px solid red;
+            cursor: pointer;
         }
     </style>
+    <script src="script.js" ></script>
 </body>
 </html>
